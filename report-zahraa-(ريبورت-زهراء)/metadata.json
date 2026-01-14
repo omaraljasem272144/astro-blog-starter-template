@@ -1,0 +1,7 @@
+{
+  "name": "Report Zahraa (ريبورت زهراء)",
+  "description": "A high-performance Arabic news portal focused on speed and reliability.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ريبورت زهراء - Report Zahraa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --brand-color: #B80000;
+        --brand-color-soft: rgba(184, 0, 0, 0.1);
+      }
+      body {
+        font-family: 'Noto Sans Arabic', sans-serif;
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+      }
+      /* تطبيق اللون الديناميكي على عناصر Tailwind */
+      .bg-brand { background-color: var(--brand-color) !important; }
+      .text-brand { color: var(--brand-color) !important; }
+      .border-brand { border-color: var(--brand-color) !important; }
+      .fill-brand { fill: var(--brand-color) !important; }
+      .accent-brand { accent-color: var(--brand-color) !important; }
+
+      @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+      @keyframes marquee-v {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-50%); }
+      }
+      .animate-marquee-seamless {
+        display: flex;
+        width: max-content;
+        animation: marquee 40s linear infinite;
+      }
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[#f6f6f6] text-[#222]">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
